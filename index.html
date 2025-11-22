@@ -20,20 +20,28 @@
       <li><a href="media.html">Media</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <!-- Toggle Button -->
+    <button class="theme-toggle" title="Switch Theme">🌙</button>
   </nav>
 
+  <!-- Hero Section -->
   <header class="hero-section fade-in">
     <div class="hero-content glass-card">
       <h1 class="big-title">Vishal Bhatt</h1>
-      <p class="tagline">Senior IT Manager • Cybersecurity Strategist • Digital Transformation Leader</p>
-      <a href="assets/docs/CV.pdf" class="btn primary" download>📄 Download Resume</a>
+      <p class="tagline">
+        Senior IT Manager • Cybersecurity Strategist • Digital Transformation Leader
+      </p>
+      <div class="hero-buttons">
+        <a href="assets/docs/CV.pdf" class="btn primary" download>📄 Download Resume</a>
+        <a href="about.html" class="btn secondary">Know More</a>
+      </div>
     </div>
     <div class="hero-image">
-      <img src="assets/img/stock/tech-lead-hero.jpg" alt="Tech Leadership Stock Image" />
+      <img src="assets/img/stock/tech-lead-hero.jpg" alt="Tech Leadership Stock Image" class="hero-photo" />
     </div>
   </header>
 
+  <!-- Welcome Section -->
   <section class="glass-card fade-in">
     <h2>Welcome to My Portfolio</h2>
     <p>
@@ -45,6 +53,7 @@
     © 2025 Vishal Bhatt — All Rights Reserved
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/theme-toggle.js"></script>
 </body>
 </html>
