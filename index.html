@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishal Bhatt | Senior IT Manager Portfolio</title>
 
-  <!-- SEO META TAGS -->
+  <!-- ✅ SEO -->
   <meta name="description" content="Vishal Bhatt – Senior IT Manager, CISO/CIO/CTO Aspirant. Empowering secure digital transformation through cybersecurity, compliance, and innovation.">
   <meta name="keywords" content="Vishal Bhatt, Cybersecurity, IT Manager, CIO, CTO, CISO, Cloud Infrastructure, Compliance, ISO 27001, Digital Transformation, Technology Leadership, Ahmedabad, Gujarat, India">
   <meta name="author" content="Vishal Bhatt">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="Vishal Bhatt | IT Leadership & Cybersecurity">
   <meta property="og:description" content="Explore the professional portfolio of Vishal Bhatt, Senior IT Manager and Cybersecurity Strategist.">
-  <meta property="og:image" content="https://vishal-bhatt-portfolio-woad.vercel.app/assets/img/profile.jpg">
+  <meta property="og:image" content="assets/img/stock/tech-lead-hero.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vishal-bhatt-portfolio-woad.vercel.app/">
-  <meta name="robots" content="index, follow">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- ✅ Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW6G5G4L5T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,14 +25,15 @@
     gtag('config', 'G-EW6G5G4L5T');
   </script>
 
+  <!-- ✅ Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body class="light">
-  <!-- NAVBAR -->
+  <!-- ✅ Navbar -->
   <nav class="navbar">
-    <div class="logo">Vishal Bhatt</div>
+    <div class="logo">VB</div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -42,10 +43,10 @@
       <li><a href="media.html">Media</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="theme-toggle" title="Switch Theme">🌙</button>
+    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">🌙</button>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- ✅ Hero Section -->
   <header class="hero-section fade-in">
     <div class="hero-content glass-card">
       <h1 class="big-title">Vishal Bhatt</h1>
@@ -58,11 +59,11 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="assets/img/stock/tech-lead-hero.jpg" alt="Tech Leadership Stock Image" class="hero-photo" />
+      <img src="assets/img/stock/tech-lead-hero.jpg" alt="Tech Leadership Image" class="hero-photo" />
     </div>
   </header>
 
-  <!-- WELCOME SECTION -->
+  <!-- ✅ Welcome Section -->
   <section class="glass-card fade-in">
     <h2>Welcome to My Portfolio</h2>
     <p>
@@ -72,12 +73,47 @@
     </p>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ✅ Footer -->
   <footer class="footer">
-    © 2025 Vishal Bhatt — All Rights Reserved
+    © 2025 Vishal Bhatt — Empowering Secure Digital Transformation
   </footer>
 
-  <!-- JS -->
-  <script src="assets/js/theme-toggle.js"></script>
+  <!-- ✅ Theme Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.remove("light");
+      body.classList.add("dark");
+      themeToggle.textContent = "☀️";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      body.classList.toggle("light");
+      if (body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+      } else {
+        themeToggle.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+  <!-- ✅ Animations -->
+  <script>
+    const fadeEls = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
