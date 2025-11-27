@@ -1,48 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Bhatt | Core Skills & Expertise</title>
+  <meta name="description" content="Explore Vishal Bhatt’s core expertise in cybersecurity, IT strategy, digital transformation, and enterprise cloud leadership." />
+  <meta name="keywords" content="Vishal Bhatt, Cybersecurity, Cloud Infrastructure, IT Leadership, ISO 27001, Digital Transformation, CIO, CISO, CTO" />
+  <meta property="og:title" content="Core Skills & Expertise | Vishal Bhatt" />
+  <meta property="og:description" content="Strategic and technical mastery across cybersecurity, cloud, and IT transformation." />
+  <meta property="og:image" content="assets/img/stock/skills-banner.jpg" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Root URL -->
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>1.00</priority>
-  </url>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW6G5G4L5T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EW6G5G4L5T');
+  </script>
+</head>
 
-  <!-- Subpages -->
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/about.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.90</priority>
-  </url>
+<body class="light">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Vishal Bhatt</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" title="Switch Theme">🌙</button>
+  </nav>
 
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/skills.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.90</priority>
-  </url>
+  <!-- PAGE HEADER -->
+  <header class="page-header fade-in">
+    <h1 class="page-title">Core Skills & Expertise</h1>
+    <p class="subtitle">Strategic Mastery in Technology, Cybersecurity, and Leadership</p>
+  </header>
 
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/projects.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.85</priority>
-  </url>
+  <!-- SKILLS GRID -->
+  <section class="skills-grid fade-in">
+    <div class="skill-card glass-card">
+      <h3>Cybersecurity</h3>
+      <ul>
+        <li>Governance, Risk & Compliance (ISO 27001, RBI, SEBI, DPDP)</li>
+        <li>Threat Intelligence & SOC Operations</li>
+        <li>Incident Response & Forensic Analysis</li>
+        <li>Identity Management, IAM, and DLP Solutions</li>
+      </ul>
+    </div>
 
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/certificates.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.85</priority>
-  </url>
+    <div class="skill-card glass-card">
+      <h3>Cloud & Infrastructure</h3>
+      <ul>
+        <li>VMware ESXi Virtualization & Hybrid Cloud Strategy</li>
+        <li>Microsoft Azure & AWS Migration Planning</li>
+        <li>Disaster Recovery, Backup & High Availability Systems</li>
+        <li>Data Center Automation & SmartFlow Integration</li>
+      </ul>
+    </div>
 
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/media.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.80</priority>
-  </url>
+    <div class="skill-card glass-card">
+      <h3>Leadership & Strategy</h3>
+      <ul>
+        <li>Enterprise IT Transformation & Digital Roadmapping</li>
+        <li>Policy Design & Regulatory Alignment</li>
+        <li>IT Budgeting & Strategic Vendor Management</li>
+        <li>Mentoring Cross-functional Technology Teams</li>
+      </ul>
+    </div>
 
-  <url>
-    <loc>https://vishal-bhatt-portfolio-woad.vercel.app/contact.html</loc>
-    <lastmod>2025-11-19</lastmod>
-    <priority>0.80</priority>
-  </url>
+    <div class="skill-card glass-card">
+      <h3>Creative & Technical Excellence</h3>
+      <ul>
+        <li>UI/UX & Frontend Engineering (HTML, CSS, JS, React)</li>
+        <li>SEO Optimization & Branding Alignment</li>
+        <li>Professional Documentation & Communication</li>
+        <li>AstroTech: Integrating Spirituality in Technology Strategy</li>
+      </ul>
+    </div>
+  </section>
 
-</urlset>
+  <!-- STOCK IMAGE SECTION -->
+  <section class="fade-in">
+    <img src="assets/img/stock/skills-banner.jpg" alt="Professional Skills Illustration" style="width:100%; border-radius:8px; margin-top:40px; box-shadow:0 4px 20px rgba(0,0,0,0.2);">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 Vishal Bhatt — All Rights Reserved
+  </footer>
+
+  <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
