@@ -3,28 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishal Bhatt | Certifications & Professional Development</title>
-  <meta name="description" content="A showcase of Vishal Bhatt’s cybersecurity, cloud, and IT leadership certifications, validating 24+ years of experience and excellence." />
-  <meta name="keywords" content="Vishal Bhatt, IT Certifications, Cybersecurity, Cloud, ISO 27001, SOC, CISO, Digital Transformation, VMware, Network Security" />
-  <meta property="og:title" content="Vishal Bhatt | Certifications" />
-  <meta property="og:description" content="Explore Vishal Bhatt’s globally recognized IT certifications and achievements." />
-  <meta property="og:image" content="assets/img/stock/certificates-banner.jpg" />
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <title>Certificates | Vishal Bhatt</title>
+  <meta name="description" content="Professional certifications of Vishal Bhatt in Cybersecurity, Cloud, and IT Management.">
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW6G5G4L5T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-EW6G5G4L5T');
-  </script>
 </head>
-
 <body class="light">
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Vishal Bhatt</div>
     <ul class="nav-links">
@@ -36,85 +19,27 @@
       <li><a href="media.html">Media</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="theme-toggle" title="Switch Theme">🌙</button>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <header class="page-header fade-in">
-    <h1 class="page-title">Certifications & Professional Development</h1>
-    <p class="subtitle">Continuous growth through learning, compliance, and innovation.</p>
-  </header>
+  <section class="page-header fade-in">
+    <h1 class="page-title">Certifications</h1>
+    <p class="subtitle">Professional credentials in Cybersecurity, Cloud, and IT Leadership</p>
+  </section>
 
-  <!-- CERTIFICATE GRID -->
-  <section class="certificate-grid fade-in" id="certGrid">
-    <!-- Certificate Cards -->
+  <section class="cert-grid fade-in">
     <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/CISSP.jpg" alt="CISSP Certification" class="framed" />
-      <p><strong>CISSP – Certified Information Systems Security Professional</strong></p>
+      <img src="assets/img/certs/cissp.jpg" alt="CISSP Certificate" />
     </div>
-
     <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/ISO27001.jpg" alt="ISO 27001 Lead Auditor" class="framed" />
-      <p><strong>ISO 27001 Lead Auditor</strong> – Data Security & Compliance Management</p>
+      <img src="assets/img/certs/ethical-hacking.jpg" alt="Ethical Hacking Certificate" />
     </div>
-
     <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/CloudSecurity.jpg" alt="Cloud Security Certificate" class="framed" />
-      <p><strong>Advanced Cloud Security Practitioner</strong> – AWS, Azure, GCP</p>
-    </div>
-
-    <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/NetworkSecurity.jpg" alt="Network Security Training" class="framed" />
-      <p><strong>Network Security Expert</strong> – Fortinet, Cisco, Checkpoint</p>
-    </div>
-
-    <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/VAPT.jpg" alt="VAPT Specialist" class="framed" />
-      <p><strong>VAPT Specialist</strong> – Ethical Hacking & Penetration Testing</p>
-    </div>
-
-    <div class="certificate-card glass-card">
-      <img src="assets/img/certificates/DigitalTransformation.jpg" alt="Digital Transformation Certificate" class="framed" />
-      <p><strong>Digital Transformation Leadership</strong> – Strategic IT Modernization</p>
+      <img src="assets/img/certs/cloud-architect.jpg" alt="Cloud Architect Certificate" />
     </div>
   </section>
 
-  <!-- LIGHTBOX MODAL -->
-  <div id="lightbox" class="lightbox">
-    <span id="closeLightbox" class="close-lightbox">&times;</span>
-    <img id="lightboxImage" class="lightbox-img" src="" alt="Certificate preview" />
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2025 Vishal Bhatt — All Rights Reserved
-  </footer>
-
+  <footer class="footer">© 2025 Vishal Bhatt — All Rights Reserved</footer>
   <script src="assets/js/theme-toggle.js"></script>
-
-  <!-- LIGHTBOX SCRIPT -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lightbox = document.getElementById("lightbox");
-      const lightboxImage = document.getElementById("lightboxImage");
-      const closeLightbox = document.getElementById("closeLightbox");
-      const certs = document.querySelectorAll(".framed");
-
-      certs.forEach(cert => {
-        cert.addEventListener("click", () => {
-          lightboxImage.src = cert.src;
-          lightbox.style.display = "flex";
-        });
-      });
-
-      closeLightbox.addEventListener("click", () => {
-        lightbox.style.display = "none";
-      });
-
-      document.addEventListener("keydown", e => {
-        if (e.key === "Escape") lightbox.style.display = "none";
-      });
-    });
-  </script>
 </body>
 </html>
