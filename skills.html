@@ -1,62 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills | Vishal Bhatt</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body class="light">
-  <nav class="navbar">
-    <div class="logo">Vishal Bhatt</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="certificates.html">Certificates</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-  </nav>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+}
 
-  <section class="glass-card fade-in">
-    <h1 class="big-title">Skills</h1>
-    <p class="tagline">Strategy • Security • Transformation</p>
-  </section>
+h1, h2 {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
 
-  <section class="skills-grid fade-in">
-    <div class="glass-card skill-card">
-      <h3>Cybersecurity & Compliance</h3>
-      <p>Expert in ISO 27001, RBI/SEBI/NBFC compliance, VAPT, endpoint protection, and secure architecture design.</p>
-    </div>
-    <div class="glass-card skill-card">
-      <h3>Cloud & Infrastructure</h3>
-      <p>Led cloud migration (Azure, AWS), hybrid infra design, VPN, firewalls, and high-availability systems.</p>
-    </div>
-    <div class="glass-card skill-card">
-      <h3>IT Strategy & Governance</h3>
-      <p>24+ years in IT leadership, budgeting, vendor management, policy creation, and digital transformation.</p>
-    </div>
-    <div class="glass-card skill-card">
-      <h3>Project Management</h3>
-      <p>Agile delivery, cross-functional team leadership, milestone tracking, and regulatory documentation.</p>
-    </div>
-    <div class="glass-card skill-card">
-      <h3>Digital Branding & SEO</h3>
-      <p>Portfolio design, recruiter optimization, schema markup, multilingual content, and AI-powered outreach.</p>
-    </div>
-    <div class="glass-card skill-card">
-      <h3>Creative & Spiritual Integration</h3>
-      <p>UI/UX with Vastu, numerology, and astrology alignment. Energetic branding and intuitive design flow.</p>
-    </div>
-  </section>
+p {
+  font-size: 1.05rem;
+}
 
-  <footer class="footer">
-    © 2025 Vishal Bhatt — All Rights Reserved
-  </footer>
+section {
+  scroll-margin-top: 80px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+img[alt*="Logo"], img[alt*="QR"], img[alt*="Vishal"] {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#certifications img {
+  transition: transform 0.3s ease;
+}
+#certifications img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #4c51bf;
+}
+
+section::before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 60px;
+  margin: 0 auto 16px;
+  background: linear-gradient(to right, #6b46c1, #b794f4);
+  border-radius: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
