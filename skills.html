@@ -1,59 +1,89 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #333333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Vishal Bhatt Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-h1, h2 {
-  letter-spacing: 0.5px;
-  font-weight: 600;
-}
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore Vishal Bhatt’s core skills in cybersecurity, compliance, cloud migration, digital transformation, and CIO readiness." />
+  <meta name="keywords" content="Vishal Bhatt, Skills, CIO, CTO, CISO, Cybersecurity, Cloud Migration, Compliance, Digital Transformation, Branding" />
 
-p {
-  font-size: 1.05rem;
-}
+  <!-- OpenGraph for LinkedIn/SEO -->
+  <meta property="og:title" content="Skills | Vishal Bhatt Portfolio" />
+  <meta property="og:description" content="Explore Vishal Bhatt’s core skills in cybersecurity, compliance, cloud migration, digital transformation, and CIO readiness." />
+  <meta property="og:image" content="assets/photos/portrait.jpg" />
+  <meta property="og:url" content="https://vishal-bhatt-portfolio-woad.vercel.app/skills.html" />
+</head>
+<body class="font-inter bg-white text-gray-800">
 
-section {
-  scroll-margin-top: 80px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+  <!-- Header -->
+  <section class="text-center py-12">
+    <h1 class="text-4xl font-bold">Core Skills</h1>
+    <p class="text-lg mt-2">Cybersecurity • Compliance • Cloud • CIO Readiness • Digital Branding</p>
+  </section>
 
-img[alt*="Logo"], img[alt*="QR"], img[alt*="Vishal"] {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  <!-- Skills Grid -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-#certifications img {
-  transition: transform 0.3s ease;
-}
-#certifications img:hover {
-  transform: scale(1.05);
-}
+      <!-- Skill 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Cybersecurity & Compliance</h2>
+        <p class="text-lg">
+          Expertise in RBI, SEBI, DPDP, and ISO 27001 compliance. Skilled in IAM, DLP, VAPT, and enterprise risk management.
+        </p>
+      </div>
 
-video {
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-}
+      <!-- Skill 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Cloud Migration & Infrastructure</h2>
+        <p class="text-lg">
+          Hands-on with AWS, Azure, GCP, VMware, and ERP modernization. Achieved 40% cost reduction through IT transformation.
+        </p>
+      </div>
 
-a {
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #4c51bf;
-}
+      <!-- Skill 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">CIO/CTO Readiness</h2>
+        <p class="text-lg">
+          Proven leadership in IT strategy, project management, and digital transformation. Focused on vision, execution, and innovation.
+        </p>
+      </div>
 
-section::before {
-  content: '';
-  display: block;
-  height: 4px;
-  width: 60px;
-  margin: 0 auto 16px;
-  background: linear-gradient(to right, #6b46c1, #b794f4);
-  border-radius: 2px;
-}
+      <!-- Skill 4 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Digital Branding & Recruiter Engagement</h2>
+        <p class="text-lg">
+          Expertise in SEO, recruiter schema, ATS optimization, and portfolio design. Integrated resume, certifications, video, and QR code for recruiter clarity.
+        </p>
+      </div>
 
-html {
-  scroll-behavior: smooth;
-}
+      <!-- Skill 5 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Technical Documentation & Communication</h2>
+        <p class="text-lg">
+          Skilled in multilingual communication, technical writing, and recruiter-focused documentation formatting for maximum impact.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Resume & Contact -->
+  <section class="py-12 px-6 text-center">
+    <a href="assets/docs/C.V.pdf" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg shadow hover:bg-indigo-700">
+      📄 Download Resume
+    </a>
+    <div class="mt-6">
+      <img src="assets/stock/qr.png" alt="QR Code to Portfolio" class="mx-auto h-32 w-32" />
+    </div>
+    <p class="mt-4 text-lg">📧 <a href="mailto:veby009@gmail.com" class="text-indigo-600 hover:underline">veby009@gmail.com</a></p>
+    <p class="text-lg">🔗 <a href="https://www.linkedin.com/in/vishal-bhatt" target="_blank" class="text-indigo-600 hover:underline">LinkedIn Profile</a></p>
+  </section>
+
+</body>
+</html>
