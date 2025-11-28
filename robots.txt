@@ -14,3 +14,7 @@ Crawl-delay: 10
 Disallow: /assets/tmp/
 Disallow: /private/
 
+User-agent: *
+Allow: /
+
+Sitemap: https://vishal-bhatt-portfolio-woad.vercel.app/sitemap.xml
