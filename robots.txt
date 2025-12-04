@@ -1,20 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vishal-bhatt-portfolio-woad.vercel.app/sitemap.xml
-
-# Google and Bing crawl settings
-User-agent: Googlebot
-Crawl-delay: 10
-
-User-agent: Bingbot
-Crawl-delay: 10
-
-# Disallow any development or system folders
-Disallow: /assets/tmp/
-Disallow: /private/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://vishal-bhatt-portfolio-woad.vercel.app/sitemap.xml
+Sitemap: https://vishal-bhatt-portfolio.vercel.app/sitemap.xml
